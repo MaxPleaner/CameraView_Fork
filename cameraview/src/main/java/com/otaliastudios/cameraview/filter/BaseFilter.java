@@ -180,7 +180,7 @@ public abstract class BaseFilter implements Filter {
 
     @NonNull
     @Override
-    public final BaseFilter copy() {
+    public BaseFilter copy() {
         BaseFilter copy = onCopy();
         if (size != null) {
             copy.setSize(size.getWidth(), size.getHeight());
